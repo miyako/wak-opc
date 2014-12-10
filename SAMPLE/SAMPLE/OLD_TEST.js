@@ -1,0 +1,1 @@
+﻿var modulesFolder = FileSystemSync('Modules');var xml2json = require(modulesFolder.path + "xml2json");var json, xml, sampleXmlPath, samplesFolderPath = application.getFolder().path + "Tests/xml2json/samples/";sampleXmlPath = samplesFolderPath + "soap.xml";xml = loadText(sampleXmlPath);json = xml2json.parse(xml);		//json = xml2json.parse();		
